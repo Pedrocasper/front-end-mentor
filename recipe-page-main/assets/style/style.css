@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.google.com/specimen/Young+Serif');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
 
 * {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 :root {
     /* Color Primary */
@@ -28,29 +30,135 @@ body {
 
 main { 
     background-color: var(--White);
-    padding: 20px;
-    margin: 40px auto 40px;
-    min-width: 375px;
+    margin: auto;
+    min-width: 300px;
     max-width: 800px;
     box-shadow: 0 0 10px #00000055;
     border-radius: 20px;
 }
 
-#container {
-    position: relative;
-    width: 500px;
-    height: 500px;
-  }
-  #container > img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+p, li{
+    font-family: var(--Outfit);
+    color: var(--Wenge-Brown);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/* fim das configurações basicas */ 
+main img {
+    width: 100%;
+}
+img {
+    border-radius: 40px;
+    width: 800px;
     margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
-h1 {
+    padding: 25px;
+}
+
+.intro {
+    margin: 0px 30px;
+}
+
+.revenue {
+    font-family: var(--Young-Serif);
+    color: var(--Dark-Charcoal);
+    font-size: 2.4em;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+/* fim das configurações do header*/ 
+
+.prepar {
+    background-color: var(--RoseWhite);
+    margin: 30px 30px;
+    border-radius: 10px;
+    font-family: var(--Outfit);
+    line-height: 2rem;
+}
+
+.prepar h3 {
+    color: var(--Dark-Raspberry);
+    font-size: 1.2rem;
+    padding: 20px 10px 5px 20px;
+}
+.prepar ul {
+    padding: 10px 30px 30px 50px;
+    text-indent: 20px;
+}
+/* fim das alterações de preparo*/
+
+.itens-revenue {
+    margin: 15px 30px;
+    font-family: var(--Outfit);
+    line-height: 2rem;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+.itens-revenue h2 {
+    color: var(--Nutmeg);
     font-family: var(--Young-Serif);
 }
+
+.itens-revenue ul {
+    padding: 10px 30px 30px 25px;
+    text-indent: 20px;
+}
+/* fim das configurações de ingredientes*/
+
+.instructions {
+    margin: 15px 30px;
+    font-family: var(--Outfit);
+    line-height: 2rem;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+.instructions h2 {
+    color: var(--Nutmeg);
+    font-family: var(--Young-Serif);
+}
+
+.instructions ol {
+    padding: 10px 30px 30px 25px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-indent: 20px;
+}
+
+/* fim das configurações de instruções */
+
+.info-nutri {
+    margin: 15px 30px;
+    line-height: 2rem;
+}
+
+.info-nutri h2 {
+    color: var(--Nutmeg);
+    font-family: var(--Young-Serif);
+}
+
+.info-nutri-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40%;
+    padding: 10px 30px 30px 25px;
+    text-indent: 20px;
+}
+
+.info-nutri-list li {
+    margin: 0 0 0 -10px;
+    list-style-type: none;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+
+.valores-nutri {
+    color: var(--Nutmeg);
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    border: 5px;
+    padding: 10px;
+    font-family: var(--Outfit);
+
+}
+
